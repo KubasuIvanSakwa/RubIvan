@@ -1,0 +1,37 @@
+
+[
+    {
+     "Name": "Home",
+     "Url": "#"
+    },
+
+    {
+        "Name": "DashBoard",
+        "Url": "#"
+    },
+
+    {
+        "Name": "Trending",
+        "Url": "#"
+    },
+    
+    {
+      "Name": "",
+      "url": ""
+    },
+
+    {
+        "Name": "History",
+        "Url": "#"
+    },
+
+    {
+        "Name": "Kenya",
+        "Url": "#"
+    },
+
+    {
+        "Name": "Popular",
+        "Url": "#"
+    }
+]

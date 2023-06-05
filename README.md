@@ -10,6 +10,7 @@
 <li>React</li>
 </ul><h2>Setup</h2>
 <hr><p>npm install
+  <br />
 npm run dev</p><h5>Steps</h5><ul>
 <li>npm install - to add the depencies used</li>
 </ul><ul>

@@ -14,5 +14,5 @@
 npm run dev</p><h5>Steps</h5><ul>
 <li>npm install - to add the depencies used</li>
 </ul><ul>
-<li>npm run dev to start the app in local host</li>
+<li>npm run - dev to start the app in local host</li>
 </ul>

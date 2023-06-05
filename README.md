@@ -1,5 +1,7 @@
 <h1>RubIvan</h1>
-<hr><h2>Technologies Used</h2>
+<hr>
+<a href="https://teal-blancmange-52b331.netlify.app/"><h4>Visit</h4></a>
+<h2>Technologies Used</h2>
 <hr><ul>
 <li>HTML</li>
 </ul><ul>

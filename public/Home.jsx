@@ -1,5 +1,6 @@
 import Brief from "./Brief"
 import Content from "./Content";
+import Userdashboard from "./Userdashboard";
 
 
 function Home() {
@@ -16,6 +17,7 @@ function Home() {
           dates={formattedDate}
          />
          <Content />
+         <Userdashboard />
     <footer>
     </footer>
     </div>

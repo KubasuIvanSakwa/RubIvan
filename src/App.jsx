@@ -14,7 +14,7 @@ function App() {
         <TopNav />
         <Nav />
       </div>
-      <Home />
+       <Home />
     </>
   )
 }

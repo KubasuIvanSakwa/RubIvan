@@ -50,7 +50,7 @@ button[type="submit"] {
   overflow: hidden;
   border: none;
   border-radius: inherit;
-  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath fill='%23ffffff' d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
   cursor: pointer;
 
   width: 50px;
@@ -166,20 +166,6 @@ input[type="search"]:focus {
   margin-left: 30px;
 }
 
-.context p {
-  color: #9BDBFF;
-  max-width: 300px;
-}
-
-.context h3 {
-  color: #dfe4e7;
-}
-
-.card img {
-  width: 300px;
-  margin-bottom: 10px;
-  border-radius: 20px;
-}
 
 .breifing{
   position: fixed;
@@ -199,4 +185,31 @@ input[type="search"]:focus {
 
 .Home footer {
   height: 50px;
+}
+
+.card {
+  border-bottom: 1px solid rgb(141, 174, 187);
+  padding: 10px;
+  width: 740px;
+
+  padding-bottom: 60px;
+}
+
+.card:last-child {
+  border: none;
+}
+
+.context h2 {
+  color: #9BDBFF;
+  padding: 10px;
+}
+
+.context h3 {
+  color: #edf7e9;
+  padding: 10px;
+}
+
+.context .magnitude {
+  padding: 10px;
+  color: #c9cfc5;
 }

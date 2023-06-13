@@ -213,3 +213,79 @@ input[type="search"]:focus {
   padding: 10px;
   color: #c9cfc5;
 }
+
+.not-loaded {
+  position: absolute;
+  background-color: #202124;
+  border-radius: 20px;
+
+  width: 500px;
+  height: 300px;
+  left: 400px;
+
+}
+.not-loaded h4 {
+  color: white;
+
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.not-loaded p {
+   color:rgba(49, 112, 112, 0.856);
+   font-size: 20px;
+   padding: 10px;
+   margin-top: 90px;
+}
+
+/* .not-loaded h3 {
+  color: rgba(49, 112, 112, 0.856);
+  
+  padding: 20px;
+  margin-top: 110px;
+  margin-left: 130px; 
+  font-size: 30px;
+} */
+
+
+.loader {
+  display: flex;
+  align-items: center;
+  position: absolute;
+
+  top: 40%;
+  left: 40%;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.bar {
+  display: inline-block;
+  width: 3px;
+  height: 20px;
+  background-color: rgba(47, 148, 231, 0.5);
+  border-radius: 10px;
+  animation: scale-up4 1s linear infinite;
+}
+
+.bar:nth-child(2) {
+  height: 35px;
+  margin: 0 5px;
+  animation-delay: .25s;
+}
+
+.bar:nth-child(3) {
+  animation-delay: .5s;
+}
+
+@keyframes scale-up4 {
+  20% {
+    background-color: rgb(9, 53, 78);
+    transform: scaleY(1.5);
+  }
+
+  40% {
+    transform: scaleY(1);
+  }
+}

@@ -1,7 +1,4 @@
 import Brief from "./Brief"
-import Content from "./Content";
-import Userdashboard from "./Userdashboard";
-
 
 function Home() {
     const currentDate = new Date();
@@ -15,9 +12,7 @@ function Home() {
         <Brief
           header={brief}
           dates={formattedDate}
-         />
-         <Content />
-         <Userdashboard />
+        />
     <footer>
     </footer>
     </div>

@@ -77,57 +77,75 @@ input[type="search"]:focus {
 }
 
 .qn {
+  cursor: pointer;
+
   margin-top: 16px;
   margin-left: 50px;
 }
 
 .settings {
+  cursor: pointer;
+
   margin-left: -20px;
   margin-top: -11px;
 }
 
 .Login {
   margin-left: auto;
+  cursor: pointer;
+
   margin-top: -6px;
+  margin-right: 10px;
 }
 
 .Nav {
   margin-top: -20px;
+  display: flex;
+  justify-content: center;
+  
 }
 
-.Nav ul{
- display: flex;
- justify-content: center;
-}
-
-.Nav ul li {
+.Nav a{
+  color: rgb(190, 185, 185);
   list-style: none;
   padding: 15px;
-}
-
-.Nav ul li:first-child {
-  margin-left: -250px;
-}
-
-.Nav ul li:nth-child(4) {
-  border-left: 3px solid #cac6c6;
-  height: 2px;
-  margin-top: 10px;
-  margin-left: 25px;
-}
-
-.Nav ul li a {
   text-decoration: none;
   font-size: 16px;
+  }
+ 
+
+.Nav a:first-child {
+  margin-left: -400px;
 }
 
-.linkss {
-  color:#bbb9b9;
+.cat-nav {
+  display: flex;
+  justify-content: flex-end; 
+  flex-wrap: wrap-reverse;
+  position: fixed;  
+
+  right: 20px;
+  width: 250px;
 }
 
-.linkss.active {
-  color:aqua;
+.cat-nav a {
+  text-decoration: none;
+  color: white;
+  background-color: #2D2D2E;
+
+  padding: 6px;
+  margin-left: 5px;
+  margin-bottom: 6px;
+  border-radius: 20px;
+  font-size: 16px;
+  border: 1px white solid;
 }
+
+.cat-nav a:hover {
+  background-color: #202124;
+  color: rgb(92, 202, 184);
+}
+
 
 .Home {
   position: relative;
@@ -136,12 +154,11 @@ input[type="search"]:focus {
 
 .Content {
   background-color: #202124;
-  
 
   border-radius: 20px;
-  margin-top: 70px;
-  width: 800px;
-  margin-left: 200px;
+  margin-top: -70px;
+  width: 850px;
+  margin-left: 150px;
   height: 100%;
 }
 
@@ -159,6 +176,7 @@ input[type="search"]:focus {
 }
 
 .Content .card {
+  position: relative;
   display: flex;
   justify-content: space-around;
 
@@ -167,20 +185,44 @@ input[type="search"]:focus {
 }
 
 
+.context-btn {
+  background-color: crimson;
+  text-decoration: none;
+  
+
+  padding: 10px;
+  border-radius: 20px;
+  color: rgb(2, 49, 49);
+}
+
+.btn1 {
+  position: absolute;
+  right: 30px;
+}
+
+.btn2 {
+  position: absolute;
+  background-color:rgb(36, 228, 235) ;
+
+  right: 30px;
+  bottom: 20px;
+}
+
+
 .breifing{
-  position: fixed;
-  top: 200px;
-  left: 10px;
   z-index: 2;
+  width: 150px;
+  position: fixed;
 }
 
 .breifing h3{
-  font-size: 20px;
+  font-size: 18px;
   color: #78787B;
 }
 
 .breifing p {
   color: #C8C8CA;
+  font-size: 20px;
 }
 
 .Home footer {
@@ -200,18 +242,52 @@ input[type="search"]:focus {
 }
 
 .context h2 {
+  position: absolute;
   color: #9BDBFF;
-  padding: 10px;
+
+  top: 2px;
+  left: 60px;
+  padding: 2px;
+  font-size: 20px;
+  width: 400px;
 }
 
-.context h3 {
-  color: #edf7e9;
-  padding: 10px;
-}
 
-.context .magnitude {
-  padding: 10px;
+.magnitude,
+.cord,
+.date,
+.image {
   color: #c9cfc5;
+}
+
+.image {
+  margin-left: -200px;
+  margin-top: 70px;
+
+  height: 200px;
+  border-radius: 20px;
+  width: 400px;
+  border: 1px solid rgb(78, 75, 75);
+}
+
+.cont {
+  position: absolute;
+  top: 70px;
+
+  right: -50px;
+  font-size: 18px;
+}
+
+.cord, 
+.magnitude,
+.date{
+  padding: 10px;
+}
+
+.magnitude {
+  width: 300px;
+  height: 100px;
+  word-wrap: break-word;
 }
 
 .not-loaded {
@@ -262,11 +338,12 @@ input[type="search"]:focus {
 
 .bar {
   display: inline-block;
+  animation: scale-up4 1s linear infinite;
+  background-color: rgba(47, 148, 231, 0.5);
+
   width: 3px;
   height: 20px;
-  background-color: rgba(47, 148, 231, 0.5);
   border-radius: 10px;
-  animation: scale-up4 1s linear infinite;
 }
 
 .bar:nth-child(2) {
@@ -278,6 +355,143 @@ input[type="search"]:focus {
 .bar:nth-child(3) {
   animation-delay: .5s;
 }
+
+.side-nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: fit-content;
+  background-color: #161718;
+
+  border-radius: 20px;
+  top: 220px;
+  right: 6px;
+  z-index: 3;
+}
+
+.side-nav h3{
+  align-self: center;
+  font-size: 20px;
+  color: rgba(17, 136, 136, 0.856);
+}
+
+.cat-links {
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  color: rgb(62, 207, 188);
+  box-shadow: rgba(70, 62, 62, 0.07) 0px 1px 1px, rgba(236, 219, 219, 0.07) 0px 2px 2px, rgba(228, 219, 219, 0.07) 0px 4px 4px, rgba(218, 210, 210, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+
+  font-size: 20px;
+  font-weight:600;
+  padding: 10px;
+  margin: 5px;
+  width: 300px;
+  height: 90px;
+  border-radius: 20px;
+}
+
+.cat-links::before {
+  content: '';
+  position: absolute;
+  background-color: #01151a;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: .6;
+}
+
+.cat-links > p {
+  position: absolute;
+  top: 30px;
+  left: 70px;
+}
+
+.one {
+  background-image: url(src/images/severe-storms.jpeg);
+  background-size: cover;
+  background-position: left center;
+}
+
+.two {
+  background-image: url(src/images/sea-and-lake-ice.jpg);
+  background-size: cover;
+  background-position: left center;
+}
+
+.three {
+  background-image: url(src/images/volcanos.webp);
+  background-size: cover;
+  background-position: left center;
+}
+
+.three > p{
+  left: 100px;
+}
+
+.four {
+  background-image: url(src/images/Wildfires.webp);
+  background-size: cover;
+  background-position: left center;
+}
+
+.four > p{
+  left: 100px;
+}
+
+.dash {
+  display: flex;
+  border: 1px white solid;
+
+  border-radius: 20px;
+  margin-top: 200px;
+   height: 440px;
+   width: 90%;
+   margin-left: 70px;
+}
+
+/* user dashboard */
+
+.about {
+  background-color: blue;
+  border-right: 1px solid white;
+
+  padding: 20px;
+  width: 300px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.about div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  background-image: url(src/images/barner.jpeg);
+  background-position: top;
+  background-size: cover;
+
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.about h3{
+  color: white;
+  border-right: 1px solid white;
+
+  border-radius: 20px;
+  padding: 4px;
+}
+
+.about .stats {
+  font-size: 19px;
+  color: red;
+}
+
 
 @keyframes scale-up4 {
   20% {

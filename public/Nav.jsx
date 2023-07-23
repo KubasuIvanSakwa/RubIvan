@@ -1,29 +1,17 @@
-import  { useState } from 'react';
-import Navigate from './Navigate';
+import { NavLink } from "react-router-dom"
 
 function Nav() {
-  const [activeLink, setActiveLink] = useState(null);
+const Active = {
+  "color": "yellow"
+}
 
-  const handleLinkClick = (navy) => {
-    setActiveLink(navy.Name);
-  };
-
-  const nav = Navigate.map(navy => {
-    const isActive = navy.Name === activeLink;
-
-    return (
-      <li key={navy.Name}>
-        <a className={isActive ? 'linkss active' : 'linkss'} href={navy.Url} onClick={() => handleLinkClick(navy)}>
-          {navy.Name}
-        </a>
-      </li>
-    );
-  });
-
-  return (
-    <div className="Nav">
-      <ul>{nav}</ul>
-    </div>
+  return (   
+        <nav className="Nav">
+          <NavLink to="/" style={({ isActive }) => isActive ? Active : null}>Home</NavLink>
+          <NavLink to="/dashboard" style={({ isActive }) => isActive ? Active : null}>Dashboard</NavLink>
+          <NavLink to="/latest" style={({ isActive }) => isActive ? Active : null}>Latest</NavLink>
+          <NavLink to="/popular" style={({ isActive }) => isActive ? Active : null}>Popular</NavLink>
+      </nav>
   );
 }
 

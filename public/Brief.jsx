@@ -1,4 +1,4 @@
-// eslint-disable-next-line react/prop-types
+
 function Brief({dates, header}) {
  
   return (

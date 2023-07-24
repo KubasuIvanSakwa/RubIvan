@@ -18,6 +18,7 @@ function Content() {
           const response = await fetch("https://eonet.gsfc.nasa.gov/api/v3/events")
           const data = await response.json()
           setDisaster(data.events)
+          console.log(data)
           localStorage.setItem("disasterData", JSON.stringify(data.events))
         }
         setIsLoading(false)

@@ -57,7 +57,7 @@ function Content() {
 
   return (
     <div className="Content">
-      <h4>Top News</h4>
+      <h4>Disasters</h4>
       <hr />
       <div>{CardElement}</div>
     </div>
